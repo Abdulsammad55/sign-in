@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire - Battle Royale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Free Fire</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Free Fire</h1>
+            <p>Join the ultimate Battle Royale.</p>
+            <button class="cta-btn" onclick="showLoginForm()">Login</button>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Game Features</h2>
+        <div class="feature-item">
+            <h3>Fast-Paced Action</h3>
+            <p>Engage in thrilling 10-minute matches.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Varied Characters</h3>
+            <p>Choose from unique characters with special abilities.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Survival Mode</h3>
+            <p>Be the last player standing in a deadly battle royale.</p>
+        </div>
+    </section>
+
+    <section id="login" class="login-section" style="display: none;">
+        <h2>Login to Free Fire</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Enter Username" required>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="submit" class="submit-btn">Login</button>
+            <div id="login-error" class="error-message"></div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Free Fire. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

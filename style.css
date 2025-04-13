@@ -1,0 +1,220 @@
+/* Global Styles */
+body {
+    font-family: 'Russo One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffb800;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    font-size: 1.2rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffb800;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('your-image-url.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    color: #ffb800;
+    animation: slideUp 2s ease-in-out;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.cta-btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ffb800;
+    border: none;
+    border-radius: 50px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #e29f00;
+}
+
+/* Features Section */
+.features {
+    padding: 50px;
+    text-align: center;
+    background-color: #222;
+}
+
+.features h2 {
+    font-size: 3rem;
+    color: #ffb800;
+    margin-bottom: 30px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.feature-item {
+    margin: 20px;
+    display: inline-block;
+    width: 30%;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.feature-item h3 {
+    font-size: 2rem;
+    color: #ffb800;
+}
+
+.feature-item p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Login Section */
+.login-section {
+    background-color: #222;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.login-section h2 {
+    font-size: 2.5rem;
+    color: #ffb800;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 15px;
+    margin: 10px;
+    font-size: 1.2rem;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.submit-btn {
+    padding: 15px 30px;
+    background-color: #ffb800;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #e29f00;
+}
+
+.error-message {
+    color: #ff6666;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
